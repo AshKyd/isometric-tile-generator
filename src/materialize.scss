@@ -1,0 +1,8 @@
+$primary-color: #212121 !default;
+$primary-color-light: #ccc !default;
+$primary-color-dark: #000 !default;
+$secondary-color: #424242 !default;
+$success-color: green !default;
+$error-color: red !default;
+$link-color: lightblue !default;
+@import "../node_modules/materialize-css/sass/materialize.scss";

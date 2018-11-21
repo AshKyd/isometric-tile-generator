@@ -1,0 +1,28 @@
+{
+  "name": "isometric-tile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "image-brightness": "0.0.10",
+    "image-filter-core": "^2.0.2",
+    "kewler": "^1.0.8",
+    "materialize-css": "^1.0.0",
+    "save-file": "^2.1.1",
+    "throttle-debounce": "^2.0.1",
+    "vue": "^2.5.17",
+    "vue-hot-reload-api": "^2.3.1"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.3.0",
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.15.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
