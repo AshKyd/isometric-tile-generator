@@ -10,7 +10,7 @@
         v-model="svgRef"
         />
     </div>
-    <div class="iso-row z-depth-5" :style="{ 'background-color': toolColor }">
+    <div class="iso-row z-depth-5">
       <div class="asset"><ImageAsset name="Top" :initial-values="assetTop" v-model="assetTop" /></div>
       <div class="asset">
         <ImageAsset name="Left" :initial-values="assetLeft" v-model="assetLeft" />
