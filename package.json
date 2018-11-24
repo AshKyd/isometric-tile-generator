@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build web/index.html; parcel build --no-minify src/index.html -d dist/app/",
+    "build": "parcel build web/index.html; parcel build --no-minify src/index.html -d dist/app/ --public-url=/app/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
