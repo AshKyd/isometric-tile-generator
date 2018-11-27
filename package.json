@@ -1,14 +1,23 @@
 {
-  "name": "isometric-tile-generator",
+  "name": "isotile",
+  "productName": "Isotile",
+  "description": "Quickly generate tiles for your next game from sprites or solid colors.",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "electron-entry.js",
+  "homepage": "https://isotile.ash.ms/",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build web/index.html; parcel build --no-minify src/index.html -d dist/app/ --public-url=/app/",
+    "build": "npm run build:web && npm run build:app",
+    "build:web": "parcel build web/index.html",
+    "build:app": "parcel build --no-minify src/index.html -d dist/app/ --public-url=/app/",
+    "build:electron": "bash electron/build-electron.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": {
+    "name": "Ash Kyd",
+    "email": "ash@kyd.com.au",
+    "url": "http://ash.ms/"
+  },
   "license": "ISC",
   "dependencies": {
     "image-brightness": "0.0.10",
@@ -22,8 +31,31 @@
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^2.3.0",
+    "electron-builder": "^20.28.4",
     "parcel-bundler": "^1.10.3",
     "sass": "^1.15.1",
     "vue-template-compiler": "^2.5.17"
+  },
+  "build": {
+    "appId": "kyd.isotile",
+    "copyright": "Copyright © ${author} 2018",
+    "mac": {
+      "category": "public.app-category.graphics-design",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "category": "Graphics",
+      "target": [
+        {
+          "target": "deb"
+        },
+        {
+          "target": "rpm"
+        }
+      ]
+    }
   }
 }

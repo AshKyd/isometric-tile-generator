@@ -8,3 +8,11 @@ Wishlist:
 - Load/save shadow amount on edges
 - Pick primary interface colour from images
 - some kind of load/save + preview multiple tiles together
+
+## Building
+
+Electron build prereqs on Mac:
+
+```
+brew install rpm imagemagick
+```
